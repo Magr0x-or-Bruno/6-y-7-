@@ -1,29 +1,92 @@
+/* Estilo geral do corpo */
 body {
-    background-color: #1D4221;
-    color: white;
+    background-color: #2E3B2E; /* Fundo verde escuro para representar uma floresta ou mistério */
+    color: #F2E1B3; /* Cor de texto suave para contraste com o fundo */
     font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 100vh; /* Ocupa toda a altura da tela */
     margin: 0;
+    padding: 0;
+    background-image: url('img/background.jpg'); /* Imagem de fundo sutil de floresta ou mapa antigo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
+/* Estilo para os botões */
 button {
-    background-color: #64A712;
+    background-color: #64A712; /* Cor de fundo verde para os botões */
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Transição suave para mudanças de cor */
+    margin: 10px;
 }
+
+button:hover {
+    background-color: #4B8C0A; /* Efeito de hover (escurecer o verde) */
+}
+
+/* Estilo para as seções de passos */
 .passo {
     display: none;
+    opacity: 0;
+    transition: opacity 1s ease; /* Efeito suave de transição */
 }
+
 .passo.ativo {
-    display:block;
+    display: block;
+    opacity: 1; /* Torna o passo visível com efeito suave */
 }
+
+/* Estilo para o main container */
 main {
-    text-align: center;
-    max-width: 75%;
+    width: 100%;
+    max-width: 900px; /* Define a largura máxima da área principal */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para dar destaque ao conteúdo */
+    border-radius: 12px;
+    margin: 20px;
 }
+
+/* Estilo para as imagens */
 img {
-   max-width: 75%;
+    max-width: 100%; /* Imagens ocupam toda a largura disponível */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Sombra para dar profundidade */
+    margin-bottom: 20px;
+}
+
+/* Adicionando estilo ao texto */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Estilo para o header de título (caso precise de título em algum passo) */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #F2E1B3; /* Cor suave e contrastante */
+}
+
+/* Estilo para os botões no fundo */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cores complementares para dar contraste */
+h1, p {
+    color: #F2E1B3;
 }
